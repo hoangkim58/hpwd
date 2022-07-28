@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel = "icon" href = "./asset/img/logo-web-modified.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="./src/author.js"></script> 
+    <script defer src="./src/hpbd.js"></script> 
+    <title>4U</title>
+    
+</head>
+<body onload="removeLocalS()"> 
+    <div class="header-container">
+        <div class="header">
+            <div onclick="reloadPage()">
+                <a href="./index.html">
+                    <img class="header-logo" src='./asset/img/logo-web-modified.png'>
+                </a>
+            </div>
+
+            <!-- active toggle --show message data-toggle='model' -->
+            <div class="header-info" data-target="#exampleModal" >
+                <img src="/" class="logo-account">
+                <div class="text-account">Login</div>
+               
+            </div>
+        </div>
+    </div>
+    <div id="root" >
+        <div class="m-t">
+            <div class="screen__layout">
+                <div class="screen__container"> 
+                    <div class="screen"> 
+                        Hello
+                    </div>    
+                    <div>
+
+                        <div class="screen screen-surf">Hello</div>  
+                        <div class="sreen-surf-container">
+                            <div class="sreen-surf-background"></div>
+                            <div class="screen screen-surf-second">Hello</div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--  -->
+            <div class="title-rule-container">
+
+                <div class="title-rule alert" date-on="false">Password is date, month of your birth:</div>
+            </div>
+            <div class="title-link-notify ">***</div>
+            <!--  -->
+            <div class="get-password__container">   
+                <span id="input-info">
+                    <input type="number" min="1" max="31" maxlength="2" placeholder="Day"  required>
+                    <input type="number" min="1" max="12" maxlength="2" placeholder="Month" required>
+                </span>
+                <div> 
+                    <button class="get-value-time b1 btn btn-info" onclick="handleBirthday()">OK</button>
+                </div>
+            </div>
+            <div class="img-container ">
+                <div>
+                    <img class="img-main noneDisplay"/> 
+                </div>
+                <!-- <p class="img-countdown">0</p> -->
+                <div>
+
+                    <button class="b1 btn btn-danger click-me noneDisplay"  onclick="handlePartyBD()">Next</button>  
+                </div>
+                <div class="hpbd-container noneDisplay" >
+                    <img class="hpbd-card" src="./asset/img/cake-hpbd.png" alt="">
+                    <p class="hpbd-text">Chúc bạn luôn vui vẻ, tươi trẻ và thành công trong cuộc sống!</p>
+                </div>
+            </div>
+        </div>
+       
+    </div> 
+    <audio id="myAudio-applause"  disabled>
+        <source src="./asset/audio/applause-indoor-laughter.mp3" type="audio/ogg">  
+    </audio>
+    <audio id="myAudio-time-run" disabled>
+        <source src="./asset/audio/time-out.wav" type="audio/ogg">  
+    </audio>
+    <audio id="myAudio-saying-hpbd" disabled>
+        <source src="./asset/audio/children-hpbd.mp3" type="audio/ogg">  
+    </audio> 
+    <audio id="myAudio-saying-hpbd-crowd" disabled>
+        <source src="./asset/audio/voice-hpbd-crowd.mp3" type="audio/ogg">  
+    </audio> 
+</body>
+</html>

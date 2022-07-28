@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel = "icon" href = "./asset/img/logo-web-modified.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="./src/author.js"></script> 
+    <script defer src="./src/main.js"></script> 
+    <title>HK</title>
+    
+</head>
+<body onload="removeLocalS()"> 
+    <div class="header-container">
+        <div class="header">
+            <div onclick="reloadPage()">
+                <a href="./index.html">
+                    <img class="header-logo" src='./asset/img/logo-web-modified.png'>
+                </a>
+            </div>
+
+            <!-- active toggle --show message data-toggle='model' -->
+            <div class="header-info" data-target="#exampleModal" >
+                <img src="" class="logo-account">
+                <div class="text-account">Login</div>
+                <div class="num-message">1</div>
+                <div class="message-cover" >
+
+                    <div class="message-container">
+                        <p>Your have a message!!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="message__box-confirm">
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+                        <button type="button" class="close" onclick="playAudioDismiss()" data-dismiss="modal" aria-label="Close">
+                            <span class="dismiss-icon" aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            Next game: "Countdown to your born "
+                            <br>
+                            Are you play it?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary btn-accept-play">Yes</button>
+                            <button type="button" class="btn btn-secondary btn-dismiss-play" data-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="root" >
+        <div class="m-t">
+            <div class="screen__layout">
+                <div class="screen__container"> 
+                    <div class="screen"> 
+                        Hello
+                    </div>  
+                    <div class="screen screen-surf"> 
+                        Hello
+                    </div>   
+                </div>
+            </div>
+            <h2 class="explain">("Play a game with a button") </h2> 
+            
+            <!--  -->
+            <p class="title-rule alert" date-on="false">Password is date, month of your birth:</p> 
+            <a href="./countdown.html" class="title-link-notify alert ">Use for another day?</a>
+            <!--  -->
+            <div class="get-password__container">   
+                <span id="input-info">
+                    <input type="number" min="1" max="31" maxlength="2" placeholder="Day"  required>
+                    <input type="number" min="1" max="12" maxlength="2" placeholder="Month" required>
+                </span>
+                <div> 
+                    <button class="get-password b1 btn btn-info" onclick="handleButtonPass()">OK</button>
+                    <button class="get-value-time b1 btn btn-info" onclick="handleValueTime()">OK</button>
+                </div>
+            </div>
+            <div class="img-container ">
+                <img class="img-main noneDisplay"/> 
+            </d>
+            <button class="b1 btn btn-danger click-me noneDisplay">Confirm!</button> 
+
+        </div>
+        
+    </div>
+    <audio id="myAudio">
+        <source src="./asset/audio/mixkit-arabian-mystery-harp-notification-2489.wav" type="audio/ogg">  
+    </audio>
+    <audio id="myAudio-flowers">
+        <source src="./asset/audio/mixkit-game-level-completed-2059.wav" type="audio/ogg">  
+    </audio>
+    <audio id="myAudio-message-appear">
+        <source src="./asset/audio/message-appear.wav" type="audio/ogg">  
+    </audio>
+    <audio id="myAudio-message-exit">
+        <source src="./asset/audio/message-exit.wav" type="audio/ogg">  
+    </audio>
+    <audio id="myAudio-accept-quiz">
+        <source src="./asset/audio/audio-accept-deal.wav" type="audio/ogg">  
+    </audio>
+</body>
+</html>

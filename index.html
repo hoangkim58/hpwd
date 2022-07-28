@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel = "icon" href = "./asset/img/logo-web-modified.png" type = "image/x-icon">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="./src/index.js"></script>  
+    <script defer src="./src/author.js"></script>  
+    <title>HK</title>
+</head>
+<body onload=""> 
+    <div class="header-container">
+        <div class="header">
+            <div onclick="">
+                <a href="./index.html">
+                    <img class="header-logo" src='./asset/img/logo-web-modified.png'>
+                </a>
+            </div>
+
+            <!-- active toggle --show message data-toggle='model' -->
+            <div class="header-info" data-target="#exampleModal" >
+                <img src="" class="logo-account">
+                <div class="text-account">Login</div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1 class="main-title">
+            Menu    
+        </h1>
+        <div class="card-container ">
+            <div class="card active" style="width: 18rem;">
+                <img class="card-img-top" src="./asset/img/cake-hpbd.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Gift Card</h4>
+                    <p class="card-text">Best wishes for your loved one on their birhtday.</p>
+                    <a href="./hpbd.html" class="btn btn-primary">Let's go</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top " src="https://tashivietnam.com/images/upload/images/ngay-8-3-la-ngay-gi.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Gift Card</h4>
+                    <p class="card-text">Best wishes to your loved one on March 8.</p>
+                    <a href="./hpwd-c.html" class="btn btn-primary">Let's go</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem;">
+                <img class="card-img-top" src="https://static.vecteezy.com/system/resources/thumbnails/003/534/043/small_2x/count-down-time-background-free-vector.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Gift Card</h4>
+                    <p class="card-text">Help you calculate time from today to your milestone.</p>
+                    <a href="./countdown.html" class="btn btn-primary">Let's go</a>
+                </div>
+            </div>
+           
+            <div class="card " style="width: 18rem;">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qXvwgeCJcEPAZ2Dbd6TZ_jdtj4_iartBJzPr6tWIDKWr3uvkY189TBCw-jYJudBgdLQ&usqp=CAU" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Gift Card</h4>
+                    <p class="card-text">Coming soon...</p>
+                    <div class="btn btn-primary" disabled>Let's go</div>
+                </div>
+            </div>
+        </div> 
+        <div class="card-arrrow-container">
+            <div class="card-arrow card-arrow-left" onclick="isArrowLeft()">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                
+            </div>
+            <div class="card-arrow card-arrow-right" onclick="isArrowRight()">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </div>
+        </div>
+    </div>
+    <audio id="myAudio-message-appear">
+        <source src="./asset/audio/message-appear.wav" type="audio/ogg">  
+    </audio>
+</body>
+</html>
