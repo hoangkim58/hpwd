@@ -383,7 +383,7 @@ function testDateValid(a,b,c){
 
 //show background --calc Count down until BD
 var urlBackgroundImg = `https://i.pinimg.com/originals/5d/f6/c2/5df6c2a82066a17d2091a33cd62dd775.png`
-var urlSTBackgroundImg = `https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/295324370_3646488522244868_5276155090151038463_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=L-nC21rx11QAX-UcGFh&_nc_oc=AQngr2MXL4z3lJXa-R-yjZ8jm_lxjh5uI0Q-R2cphP0DbXYnZGH8GPlcDwqJNJ2EdeE&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_C59e4IuwwT-jGBbEAcMAt9-ctFEJyR8D1JnLNA_0v9A&oe=62E6DFAA`
+var urlSTBackgroundImg = `https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/295324370_3646488522244868_5276155090151038463_n.jpg?stp=dst-jpg_p843x403&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=6UaeeZaYpWsAX8Lvasa&_nc_oc=AQm0Igl14_nb2vvSWx4eoD5zp9dtWckLjyBnzsDpCWnvc4I8uMsPq705Yl1TNn_JRlM&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT-Rf3o9zrhQIJUqK64XeOnHQ_coqpUXqx-qqZ5G4I5aUg&oe=62ECCE6A`
 
 function changeBackgroundBD(check) {
     check 
